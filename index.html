@@ -15,26 +15,45 @@
 
     </head>
     <body class="container">
+        <div class="backgroundfull"></div>
         <article class="start">
-            <h1 class="mt-5 text-center">내가 부자가 될 운명인가?</h1>
-            <button type="button" class="btn btn-primary mt-5" onclick="start();">START</button>
+            <h1 class="mt-5 text-center tit-cl">내가 부자가 될 운명인가?</h1>
+            <img src="images/main.jpg" class="imgs " alt="">
+            <button type="button" class="btn btn-warning mt-5 size-btn" onclick="start();">시작</button>
         </article>
         <article class="question">
             <h4 id="step">step</h4>
             <div class="progress mt-5">
-                <div class="progress-bar" role="progressbar" style="width: calc( 100/12*5%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: calc( 100/12*5%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
+              <img src="images/Q1.png" alt="" id="questimg" class="rounded-circle mt-5">
             <h2 class="text-center mt-5" id="title">문제</h2>
             <input type="hidden" value="EI" id="type">
-            <button id ="A" type="button" class="btn btn-primary mt-5">Primary</button>
-            <button id ="B" type="button" class="btn btn-primary mt-5">Primary</button>   
+            <button id ="A" type="button" class="btn btn-warning mt-5">Primary</button>
+            <button id ="B" type="button" class="btn btn-warning mt-5">Primary</button>   
         </article>
 
         <article class="result mt-5 text-center">
-            <img id="img" src="images/dog-2810484_1280.jpg" alt="" class="rounded-circle">
-            <h2 id="animal mt-5">당신은?</h2>
-            <h3 id="explain mt-5">설명</h3>
-
+            <h1 id="result-type"></h1>
+            <img id="img" src="images/dog-2810484_1280.jpg" alt="" class="rounded-circle mt-5">
+            <h2 id="people" class="mt-5">당신은?</h2>
+            <h3 id="explain" class="mt-5">설명</h3>
+            <p id="result-ex" class="mt-5">분석</p>
+            <h3 class="future" class="mt-5">미래에는?</h3>
+            <p id="result-plan" class="mt-5"></p>
+            <h3 class="bank" class="mt-5">미래 나의 통장엔?</h3>
+            <p id="result-bank" class="mt-5"></p>
+            <h3 class="tip" class="mt-5">미래 부자력 지수 높이기 TIP?</h3>
+            <p id="result-tip" class="mt-5"></p>
+            <h3 class="goodbad" class="mt-5">부자가 될 궁합</h3>
+            <h4 class="good" class="mt-5">Good
+                <p id="result-good" class="mt-5"></p>
+            </h4>
+            
+            <h4 class="bad">Bad <p id="result-bad"></p>
+            </h4>
+           
+            
              
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox"></div>
@@ -47,6 +66,7 @@
         <input type="hidden" value="0" id="JP">
 
 
+        <script src="js/main.js"></script>
         <!-- Popper JS -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -55,9 +75,7 @@
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60862f32d46fbc08"></script>
-<script src="js/main.js"></script>
+         
 
 
     </body>

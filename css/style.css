@@ -1,3 +1,20 @@
+@font-face {
+    font-family: '777Newyorkers';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Newyorkers.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.backgroundfull{
+    width: 100%;
+    height: 50%;
+    background: rgb(55, 8, 130);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
 article{
     display: flex;
     flex-direction: column;
@@ -13,4 +30,48 @@ article{
     width: 300px;
     height: 300px;
     margin: 0 auto;
+}
+.imgs{
+    width: 600px;
+    margin: 15% auto 0;
+}
+.container{
+    width: 700px;
+}
+.tit-cl{
+    font-family: '777Newyorkers';
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+}
+.size-btn{
+    width: 300px;
+    margin: 0 auto;
+    font-family: '777Newyorkers';
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#step{
+    font-family: '777Newyorkers';
+    color: white;
+    font-size: 2rem;
+}
+#title{
+    font-family: '777Newyorkers';
+    color:  rgb(55, 8, 130);
+    font-size: 2rem;  
+}
+#questimg{
+    width: 200px;
+    margin: 0 auto;
+}
+#A{
+    font-family: '777Newyorkers';
+    color:  rgb(55, 8, 130);
+    font-size: 1.5rem;  
+}
+#B{
+    font-family: '777Newyorkers';
+    color:  rgb(55, 8, 130);
+    font-size: 1.5rem;  
 }
