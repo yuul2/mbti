@@ -4,11 +4,28 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Wemakeprice-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.start-txt{
+    margin: 0 auto;
+    font-family: '777Newyorkers';
+    color: white;
+    font-size: 2.5rem;
+}
 
 .backgroundfull{
     width: 100%;
-    height: 50%;
+    height:1000px;
     background: rgb(55, 8, 130);
     position: absolute;
     z-index: -1;
@@ -21,6 +38,8 @@ article{
 }
 
 .question{
+    background: rgb(55, 8, 130);
+    height: 100vh;
     display: none;
 }
 .result{
@@ -32,43 +51,84 @@ article{
     margin: 0 auto;
 }
 .imgs{
-    width: 600px;
-    margin: 15% auto 0;
+    width: 500px;
+    margin: 2% auto ;
+    border-radius: 30px;
 }
 .container{
-    width: 700px;
+    width: 600px;
 }
 .tit-cl{
-    font-family: '777Newyorkers';
+    font-family: 'Wemakeprice-Bold';
+    text-shadow: -2px 0 lightblue, 0 2px lightblue, 2px 0 lightblue, 0 -2px lightblue;
     font-size: 4rem;
     color: white;
     font-weight: 500;
+    margin: 0 auto;
+}
+.tit-cl2{
+    font-family: 'Wemakeprice-Bold';
+    font-size: 1rem;
+    color: rgb(194, 193, 193);
+    font-weight: 400;
+    margin: 16% auto 0;
 }
 .size-btn{
     width: 300px;
-    margin: 0 auto;
+    margin: 15% auto 0;
     font-family: '777Newyorkers';
     font-size: 1.5rem;
     font-weight: 500;
 }
 #step{
+    margin: 15% 5% 0;
+    margin-top: 15%;
     font-family: '777Newyorkers';
     color: white;
     font-size: 2rem;
 }
 #title{
     font-family: '777Newyorkers';
-    color:  rgb(55, 8, 130);
-    font-size: 2rem;  
+    color:  white;
+    font-size: 2rem;
+    margin: 10%; 
 }
 
 #A{
     font-family: '777Newyorkers';
     color:  rgb(55, 8, 130);
     font-size: 1.5rem;  
+    margin: 0 5%;
 }
 #B{
     font-family: '777Newyorkers';
     color:  rgb(55, 8, 130);
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
+    margin: 0 5%;  
 }
+.start{
+    padding: 5% 0;
+    background: rgb(55, 8, 130);
+}
+.marg{
+    margin: 3% 5%;
+}
+.mar-30{
+    margin: 15% auto;
+}
+.svgicon{
+    width: 20%;
+    margin: 0 auto;
+}
+.svgfloat{
+    width: 28%;
+}
+.result{
+    background: rgb(55, 8, 130);
+    font-family: 'Wemakeprice-Bold';
+   color: white;
+}
+
+/* #result-ex{
+    margin: 0 5%;
+} */
