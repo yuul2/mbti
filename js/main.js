@@ -79,6 +79,7 @@ var q = {
         'B': '직거래? 조용히 다른 중고어플을 켜본다.'
     },
     12: {
+        'step': 'step11',
         'title': 'Q12. 백신이 개발된다는 소식에',
         'type': 'JP',
         'A': '이제 곧 마스크도 벗고 해외여행도 가겠지? 같이 갈 사람 급구!',
@@ -350,4 +351,7 @@ function next() {
         num++;
     }
 
+    function goBack() {
+        window.history.back();
+      }
 }

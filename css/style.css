@@ -129,6 +129,109 @@ article{
    color: white;
 }
 
-/* #result-ex{
-    margin: 0 5%;
-} */
+#result-ex{
+    margin: 0 7%;
+}
+.future{
+    margin-top: 7%;
+}
+.bank{
+    margin-top: 7%;
+}
+#result-bank{
+    font-size: 1.3rem;
+}
+#result-good{
+    font-size: 1.3rem;
+}
+#result-bad{
+    font-size: 1.3rem;
+}
+#back-btn{
+    width: 300px;
+    height: 50px;
+    border: none;
+    margin: auto;
+    
+}
+
+@media (max-width:769px){
+    
+    #img{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .imgs{
+        width: 100%;
+        margin: 2% auto ;
+        border-radius: 30px;
+    }
+    .container{
+        background: rgb(55, 8, 130);
+        width: 100%;
+    }
+}
+@media (max-width:376px){
+    
+    #img{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .imgs{
+        width: 100%;
+        margin: 2% auto ;
+        border-radius: 30px;
+    }
+    .container{
+        background: rgb(55, 8, 130);
+        width: 100%;
+    }
+}
+@media (max-width:376px){
+    
+    #img{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    #people{
+        font-size: 1.5rem;
+    }
+    #explain{
+        font-size: 1rem;
+    }
+    #result-ex{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .bank{
+        font-size: 1.5rem;
+    }
+    .tip{
+        font-size: 1.5rem;
+    }
+    .goodbad{
+        font-size: 1.5rem;
+    }
+    #result-tip{
+        font-size: 0.9rem;
+    }
+    #result-good{
+        font-size: 1rem;
+    }
+    #result-bad{
+        font-size: 1rem;
+    }
+    .future{
+        font-size: 1.5rem;
+    }
+   #result-plan{
+       font-size: 0.9rem;
+       line-height: 1.5rem;
+   }
+    
+    
+
+}
