@@ -16,6 +16,9 @@
     font-weight: normal;
     font-style: normal;
 }
+a{
+    text-decoration: none;
+}
 .start-txt{
     margin: 0 auto;
     font-family: '777Newyorkers';
@@ -81,8 +84,8 @@ article{
     font-weight: 500;
 }
 #step{
-    margin: 15% 5% 0;
-    margin-top: 15%;
+    margin: 1% 5% 0;
+    margin-top: 5%;
     font-family: '777Newyorkers';
     color: white;
     font-size: 2rem;
@@ -128,7 +131,15 @@ article{
     font-family: 'Wemakeprice-Bold';
    color: white;
 }
-
+#go-back{
+    font-family: '777Newyorkers';
+    margin-left: 5%;
+    color: white;
+    font-size: 1.5rem;
+}
+.fa-chevron-left{
+    font-size: 0.8rem;
+}
 #result-ex{
     margin: 0 7%;
 }
@@ -147,13 +158,8 @@ article{
 #result-bad{
     font-size: 1.3rem;
 }
-#back-btn{
-    width: 300px;
-    height: 50px;
-    border: none;
-    margin: auto;
-    
-}
+
+
 
 @media (max-width:769px){
     

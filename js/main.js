@@ -351,7 +351,8 @@ function next() {
         num++;
     }
 
-    function goBack() {
-        window.history.back();
-      }
+    
+    document.getElementById('go-back').addEventListener('click', () => {
+        this.props.history.back(0);
+      });
 }
