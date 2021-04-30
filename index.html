@@ -28,7 +28,7 @@
         </article>
 
         <article class="question">
-            <a href="#" class="mt-5" onclick="goBack();" id="go-back"><i class="fas fa-chevron-left"></i>   돌아가자!</a> 
+            <input type ="button"value="돌아가자" class="mt-5" onclick="history.back(-1)" id="go-back">   
             
             <h4 id="step">step</h4>
             <div class="progress  marg">
@@ -60,6 +60,7 @@
             
             <h4 class="bad">Bad <p id="result-bad"></p>
             </h4>
+            <input type="button" value="다시하기" onclick="history.go(0)" class="btn btn-warning mt-5 mb-5" id="back-btn"> 
            
             
              

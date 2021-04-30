@@ -352,7 +352,7 @@ function next() {
     }
 
     
-    document.getElementById('go-back').addEventListener('click', () => {
-        this.props.history.back(0);
-      });
+    // document.getElementById('go-back').addEventListener('click', () => {
+    //     this.props.history.back(0);
+    //   });
 }
