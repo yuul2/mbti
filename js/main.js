@@ -302,7 +302,17 @@ $('#A').click(function () {
 $('#B').click(function () {
     next();
 })
-
+$('#go-back').click(function(){
+    $('.progress-bar').attr('style', 'width: calc( 100/12*' + num + '%)');
+    $('#step').html(q[num]['step']);
+    $('#title').html(q[num]['title']);
+    $('#type').val(q[num]['type']);
+    $('#A').html(q[num]['A']);
+    $('#B').html(q[num]['B']);
+    $('#img-quest').html(q[num]['img-quest']);
+    
+    num--;
+})
 function next() {
     if (num === 13) {
         $('.question').hide();
