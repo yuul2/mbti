@@ -103,11 +103,17 @@ article{
     font-size: 1.5rem;  
     margin: 0 5%;
 }
+#A:focus{
+    display: none;
+}
 #B{
     font-family: '777Newyorkers';
     color:  rgb(55, 8, 130);
     font-size: 1.5rem;
     margin: 0 5%;  
+}
+#B:focus{
+    display: none;
 }
 .start{
     padding: 5% 0;
@@ -134,8 +140,13 @@ article{
 #go-back{
     font-family: '777Newyorkers';
     margin-left: 5%;
-    color: white;
+    color: rgb(55, 8, 130);
     font-size: 1.5rem;
+    width: 100px;
+    border: none;
+}
+#go-back:focus{
+    outline: none;
 }
 .fa-chevron-left{
     font-size: 0.8rem;
@@ -163,6 +174,9 @@ article{
     height: 50px;
     border: none;
     margin: auto;
+}
+#back-btn:focus{
+    outline: none;
 }
 
 

@@ -1,4 +1,5 @@
 var num = 1;
+
 var q = {
     1: {
         'step': 'step1',
@@ -87,6 +88,94 @@ var q = {
     }
 }
 
+
+var x = {
+    12: {
+        'step': 'step11',
+        'title': 'Q12. 백신이 개발된다는 소식에',
+        'type': 'JP',
+        'A': '이제 곧 마스크도 벗고 해외여행도 가겠지? 같이 갈 사람 급구!',
+        'B': '한동안 제약 주가가 상승하겠네.. 지금이라도 탑승해 볼까..'
+    },
+    
+    11: {
+        'step': 'step11',
+        'title': 'Q11. 당근마켓 직거래를 한다면',
+        'type': 'JP',
+        'A': '(이미 신나서 직거래중)',
+        'B': '직거래? 조용히 다른 중고어플을 켜본다.'
+        10: {
+            'step': 'step10',
+            'title': 'Q10. Dynamite로 빌보드 1위를 차지한 BTS를 보면',
+            'type': 'JP',
+            'A': '와.. 국뽕이 차오른다 더 흥해라',
+            'B': '와.. 몇 주 연속1위냐.. 빌딩 한 채씩은 뽑았겠네'
+        },
+    },
+    9: {
+        'step': 'step9',
+        'title': 'Q9. 놀면 뭐하니 환불원정대 무대를 보면서',
+        'type': 'TF',
+        'A': '춤 연습을 얼마나 했을까 현역아이돌 같아',
+        'B': '나중에 또 이런 그룹이 나온다면 누가 나올려나..'
+    },
+    8: {
+        'step': 'step8',
+        'title': 'Q8. 네고왕에서 파격적으로 협상된 할인 이벤트를 본 당신은',
+        'type': 'TF',
+        'A': '해당 이벤트 기간을 숙지하고 할인 받아서 구매했다.',
+        'B': '내가 살 때 마침 이벤트를 하면 좋고 아님 말고'
+    },
+    7: {
+        'step': 'step7',
+        'title': 'Q7. 부부의 세계 사랑에 빠진게 죄는 아니잖아!를 들은 당신은',
+        'type': 'TF',
+        'A': '응 개소리 왈왈 하며 화를 내면서 봤다.',
+        'B': '와.. 두 사람을 사랑하는건 뭘까? 하며 상상해봤다.'
+    },
+    6: {
+        'step': 'step6',
+        'title': 'Q6. 재난지원금이 들어온 날 나는',
+        'type': 'SN',
+        'A': '살 건 없지만 개이득 당장 플렉스하러 간다.',
+        'B': '들어온 금액을 보고 어떻게 쓸 지 계획한다.'
+    },
+    5: {
+        'step': 'step5',
+        'title': 'Q5. 400번 저어 만드는 달고나 커피가 유행할 때',
+        'type': 'SN',
+        'A': '굳이... 유행인 건 알지만 해보진 않는다.',
+        'B': '재밌겠군 한번쯤 따라해본다.'
+    },
+    4: {
+        'step': 'step4',
+        'title': 'Q4. 동학개미운동이 활발할 때 나는',
+        'type': 'SN',
+        'A': '어떤 주식을 살지 공부 좀 해보고 산다.',
+        'B': '친구가 벌써 N% 수익을 냇다고? 나도 당장 산다.'
+    },
+    3: {
+        'step': 'step3',
+        'title': 'Q3. 나는 사회적 거리두기를 할 때',
+        'type': 'EI',
+        'A': '집 안에서는 좀이 쑤셔서 죽을 것 같아!',
+        'B': '사실 나는 원래 집순이,집돌이... 평소와 다를게 없..'
+    },
+    2: {
+        'step': 'step2',
+        'title': 'Q2. 내가 닌텐도 동물의 숲을 할 때(한다면)',
+        'type': 'EI',
+        'A': '숲에 집부터 짓고 노예처럼 일해서 빚을 갚는다.',
+        'B': '숲에서 힐링이지~ 열매따고 동물친구들과 논다.',
+    },
+    1: {
+        'step': 'step1',
+        'title': 'Q1. 아무노래 챌린지가 유행할때',
+        'type': 'EI',
+        'A': '영상을 보고 한번쯤은 춤을 따라해 봤다.',
+        'B': '해볼 생각은 전혀.. 저런건 연예인들이나..'
+    }
+}
 var result = {
     'ISTJ': {
         'people': '꼼꼼하고 깐깐한 꼰대가르송 부자',
@@ -302,17 +391,7 @@ $('#A').click(function () {
 $('#B').click(function () {
     next();
 })
-$('#go-back').click(function(){
-    $('.progress-bar').attr('style', 'width: calc( 100/12*' + num + '%)');
-    $('#step').html(q[num]['step']);
-    $('#title').html(q[num]['title']);
-    $('#type').val(q[num]['type']);
-    $('#A').html(q[num]['A']);
-    $('#B').html(q[num]['B']);
-    $('#img-quest').html(q[num]['img-quest']);
-    
-    num--;
-})
+
 function next() {
     if (num === 13) {
         $('.question').hide();
@@ -359,10 +438,32 @@ function next() {
         $('#img-quest').html(q[num]['img-quest']);
         
         num++;
+      
     }
 
     
-    // document.getElementById('go-back').addEventListener('click', () => {
-    //     this.props.history.back(0);
-    //   });
+   
 }
+
+    function prev (){
+        $('.progress-bar').attr('style', 'width: calc( 100/12*' + num-1 + '%)');
+        $('#step').html(q[num-1]['step']);
+        $('#title').html(q[num-1]['title']);
+        $('#type').val(q[num-1]['type']);
+        $('#A').html(q[num-1]['A']);
+        $('#B').html(q[num-1]['B']);
+        $('#img-quest').html(q[num-1]['img-quest']);
+        num--;
+    // if (input_val >= 1) {
+
+    }
+    // console.log(num)
+// }
+$('#go-back').click(function(){
+    
+    var type2 = $('#type2').val();
+    var preValue = $('#' + type2).val();
+    $('#' + type2).val(parseInt(preValue) + 1);
+
+    prev()
+})
